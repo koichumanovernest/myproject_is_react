@@ -3,7 +3,7 @@ import './Result.css'
 import { useState } from "react";
 import { useEffect } from "react";
 
- const ResultRender = () => {
+  const ResultRender = () => {
   const [inputValue1, setInputValue1] = useState("");
   const [inputValue, setInputValue] = useState("");
   useEffect(() => {

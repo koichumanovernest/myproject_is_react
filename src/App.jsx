@@ -4,8 +4,7 @@ import ResultRender from "./Components/Result/ResultRender";
 
 function App() {
 	const [data, setData] = useState([]);
-
-	
+  
 	const getData = async () => {
 		const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
 		const responseData = await response.json();
@@ -20,6 +19,7 @@ function App() {
 	return (
 		<div className="App">
 			<ResultRender />
+			
 			<div className="button">
 				<button
 					onClick={() => {
@@ -29,7 +29,7 @@ function App() {
 				</button>
 				<button
 					onClick={() => {
-						getData()
+						getData();
 					}}>
 					add All
 				</button>
